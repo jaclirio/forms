@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'forms';
+  formData:any[] = [];
+
+  handleReactiveFormSubmit(data: any) {
+    console.log('works');
+    this.formData.push(data);
+  }
 }
